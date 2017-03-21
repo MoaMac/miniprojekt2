@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81508df6-2b3e-47bd-b6e8-6db6df0ef1cb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/angular.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/code.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.html" afterPath="" />
-    </list>
+    <list default="true" id="81508df6-2b3e-47bd-b6e8-6db6df0ef1cb" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -295,12 +291,12 @@
       <option name="presentableId" value="Default" />
       <updated>1490084033183</updated>
       <workItem from="1490084036745" duration="75000" />
-      <workItem from="1490084154456" duration="65000" />
+      <workItem from="1490084154456" duration="136000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140000" />
+    <option name="totallyTimeSpent" value="211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
