@@ -1,26 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Java</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
-  <body ng-app="theApp" ng-controller="lightboxController">
-  
-  <button id="myBtn">Open Modal</button>
-
-  <!-- The Modal -->
-  <div id="myModal" class="modal">
-
-    <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <p>Some text in the Modal..</p>
-    </div>
-
-  </div>
-
+<head>
+  <title>Java</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
   <script src="angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="data.js"></script>
   <script src="code.js"></script>
-  </body>
+</head>
+<body>
+
+<div class="container">
+  <!-- Trigger the modal with a button -->
+  <button type="button" id="myButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1">JAVA</button>
+  <button type="button" id="myButton" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">GitHub</button>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Java</h4>
+        </div>
+        <div class="modal-body">
+        <div> Massa text om java</div>
+          <main ng-app="gameApp" ng-controller="gameCtrl">
+            <div id="maindiv" ng-show="flagan">
+              <h2>{{hej}}</h2>
+              <h3>{{page.fraga}}</h3>
+              <div ng-repeat="o in page.options" >
+                <label>
+                  <input ng-click="select($index+1)" type ="radio" name="e" ng-value="o"><span>{{o}}</span>
+                </label>
+              </div>
+              <div ng-hide="flag">
+                <input class="myButton" type="submit" value="Fortsätt" ng-click="NextQuestion()"><br>
+              </div>
+            </div>
+          
+            <button type="button" lass="btn btn-default" ng-hide="quizflag" ng-click="doQuiz()">Do the Quiz</button>
+          </main>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">GitHub</h4>
+        </div>
+        <div class="modal-body">
+          <p>Massa github text</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
 </html>
