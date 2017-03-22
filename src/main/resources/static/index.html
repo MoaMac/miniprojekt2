@@ -5,34 +5,22 @@
     <title>Java</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
-  <body>
-   <div>
-      <a href="#" id="myButton">Databas</a>
-      <a href="#" id="myButton">GITHUB</a>
-      <a href="#" id="myButton">Javascript</a>
-      <a href="#" id="myButton">SCRUM</a>
-      <a href="#" id="myButton">CSS</a>
-      <a href="#" id="myButton">SPRING MVC</a>
-      <a href="#" id="myButton">HejhEJ</a>
-      <a href="#" id="myButton">CSS</a>
+  <body ng-app="theApp" ng-controller="lightboxController">
+  
+  <button id="myBtn">Open Modal</button>
 
-      <button class="w3-button w3-xlarge w3-circle w3-black">JAVA</button>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Some text in the Modal..</p>
     </div>
- <button id="myBtn">Open Modal</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
   </div>
 
-</div>
-	
-	<script src="angular.js"></script>
-    <script src="code.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="code.js"></script>
   </body>
 </html>

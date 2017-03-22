@@ -1,9 +1,3 @@
-var app = angular.module("theApp",[]);
-
-app.controller("mainCtrl", function($scope){
-  $scope.who = "world";
-});
-
 // Get the modal
 var modal = document.getElementById('myModal');
 
